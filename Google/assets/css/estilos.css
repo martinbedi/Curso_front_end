@@ -1,17 +1,66 @@
 html, body {
     height: 100%;
+    min-height: 100%;
     padding: 0;
     margin: 0;
     background: white;
     font-family: arial,sans-serif;
+    color: #222;
+}
+
+a {
+	text-decoration: none;
+	color: #1a0dab;
+}
+
+.encapsulador {
+	min-height:100%;
+    position:relative;
+}
+
+.contenido {
+	min-height:100%;
+	padding-bottom:39px; /* Altura del pie */
+}
+
+.pie {
+	background: #EEEEEE;
+	border-top: 1px solid #E0E0E0;
+
+	margin-top: 15px;
+	height: 39px;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.pie-izquierdo {
+	padding: 10px;
+	float: left;
+	display: inline-block;
+	text-align: left;
+}
+
+.pie-derecho {
+	padding: 10px;
+	float: right;
+	display: inline-block;
+	text-align: right;
+}
+
+.pie-derecho>a, .pie-izquierdo>a {
+	color: #757575;
+	font-size: 13px;
+	margin: 0 10px;
 }
 
 .menu {
 	text-align: right;
-	/**float:right;**/
+	/** TODO: float:right;**/
 	padding-top: 11px;
 	padding-right: 17px;
-	/** cambiar por margin cuando uses float **/
+	/** TODO: cambiar por margin cuando uses float **/
 }
 
 .menu>a {
@@ -20,11 +69,10 @@ html, body {
 	opacity: .75;
 	vertical-align: middle;
 	margin-right: 10.5px;
-	text-decoration: none;
 	font-size: 13px;
 }
 
-.menu>a:hover,  .menu>a:focus, .menu>a:active{
+a:hover,  a:focus, a:active{
 	text-decoration: underline;
 }
 
@@ -56,12 +104,11 @@ html, body {
 	border-radius: 50%;
 }
 
-.centrar{
+.logo{
 	margin: 0 auto;
 	width: 272px;
 	position: relative;
 	margin-top: 148px;
-
 }
 
 .pais{ 
@@ -69,4 +116,53 @@ html, body {
 	top: 75px;
 	left: 215px;;
 	color: #4285f4;
- }
+}
+
+.buscar {
+	width: 46%;
+	position: relative;
+	margin: 20px auto;
+}
+
+.buscador {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	border-radius: 2px;
+	border: 1px solid #E0E0E0;
+	-webkit-box-shadow: 0px 2px 8px 0px #E0E0E0;
+	-moz-box-shadow: 0px 2px 8px 0px #E0E0E0;
+	box-shadow: 0px 2px 8px 0px #E0E0E0;
+}
+
+.buscador-voz {
+	position: absolute;
+	top: 12px;
+	right: -12px; /** TODO: Cada vez que hacemos esto muere un panda **/
+	width: 24px;
+	height: 24px;
+}
+
+.botones {
+	margin: 30px auto;
+	width: 46%;
+	text-align: center;
+}
+
+.botones>button {
+	background: #F5F5F5;
+	color: #757575;
+	border:0;
+	font-weight: bold;
+	padding: 10px 15px;
+	font-size: 12.5px;
+}
+
+.idioma {
+	text-align: center;
+	font-size: 13px;
+}
+
+
