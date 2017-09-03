@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<!--<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="./assets/css/estilos.css">
+	</head>
+	<body>
+		<!--
+			xs: celulares
+			sm: tablets
+			md: computadores mini
+			lg: computadores pantalla grande
+		-->
+
+		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark menu">
+			<a class="navbar-brand" href="#">
+				<img src="./assets/img/logo.svg" class="logo" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Documentation</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Examples</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Themes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Jobs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Expo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<div class="my-2 my-sm-0 dropdown">
+						<a class="nav-link dropdown-toggle link-menu" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							v4.0
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Latest</a>
+							<a class="dropdown-item" href="#">v4 Alpha 6</a>
+							<a class="dropdown-item" href="#">v3.3.7</a>
+							<a class="dropdown-item" href="#">v2.3.2</a>
+						</div>
+					</div>
+					<a href="#" class="link-menu"> <span class="fa fa-github"></span></a>
+					<a href="#" class="link-menu"> <span class="fa fa-twitter"></span></a>
+					<a href="#" class="link-menu"> <span class="fa fa-slack"></span></a>
+					<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Download</button>
+				</form>
+			</div>
+		</nav>
+
+		<div class="encapsulador">
+			<div class="contenido">
+				<div class="container">
+					<div class="row neutralizador-row contenido-principal">
+						<div class="col-6">
+							<h1 class="titulo">Bootstrap</h1>
+
+							<p class="parrafo-principal">
+								Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+							</p>
+
+							<p class="parrafo-principal">
+								Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+							</p>
+							<div class="row">
+								<div class="col-6">
+									<button type="button" class="btn btn-outline-dark btn-block boton-purpura">Get started</button>
+								</div>
+								<div class="col-6"> 
+									<button type="button" class="btn btn-outline-dark btn-block boton-gris">Download</button>
+								</div>
+							</div>
+
+							<div class="texto-opaco">
+								Currently v4.0.0-beta
+							</div>
+						</div>
+						<div class="col-6">
+							<img src="./assets/img/bootstrap-stack.png" class="img-principal">
+						</div>			
+					</div>
+				</div>
+
+				<div class="row neutralizador-row">
+					<div class="col-4 caracteristica">
+						<img src="./assets/img/instalacion.png" class="caracteristica-logo">
+						<h2 class="caracteristica-titulo">Installation</h2>
+						<p>
+							Include Bootstrap's source Sass and JavaScript files via Bower, Composer, Meteor, or npm. Package managed installs don't include documentation, but do include our build system and readme.
+						</p>
+						<p class="fuente-console">
+							npm install bootstrap@4.0.0-beta
+						</p>
+						<p class="fuente-console">
+							gem install bootstrap -v 4.0.0.alpha6
+						</p>
+						<p class="fuente-console">
+							bower install bootstrap#v4.0.0-beta
+						</p>
+
+						<div class="separador-gris"></div>
+
+						<a href="#" class="btn btn-outline-primary caracteristica-boton">Explore the docs</a>
+
+					</div>
+
+					<div class="col-4 caracteristica caracteristica-central">
+						<img src="./assets/img/cdn.png" class="caracteristica-logo">
+						<h2 class="caracteristica-titulo">Bootstrap CDN</h2>
+						<p>
+							When you only need to include Bootstrap's compiled CSS or JS, you can use the Bootstrap CDN.
+						</p>
+						<h5><strong>CSS only</strong></h5>
+						<pre><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"&gt;
+						</code></pre>
+						<h5><strong>JS, Popper, and jQuery</strong></h5>
+						<pre><code>&lt;script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"&gt;&lt;/script&gt;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"&gt;
+						</code></pre>
+
+						<div class="separador-gris"></div>
+
+						<a href="#" class="btn btn-outline-primary caracteristica-boton">Read installation docs</a>
+
+					</div>
+
+					<div class="col-4 caracteristica">
+						<img src="./assets/img/disenho.png" class="caracteristica-logo">
+						<h2 class="caracteristica-titulo">Official Themes</h2>
+						<p>
+							Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
+						</p>
+						<img src="./assets/img/dashboard.png" class="caracteristica-imagen">
+
+						<div class="separador-gris"></div>
+
+						<a href="#" class="btn btn-outline-primary caracteristica-boton">Browse themes</a>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="pie">
+				<div class="pie-links">
+					<a href="#">GitHub</a>
+					<a href="#">Twitter</a>
+					<a href="#">Examples</a>
+					<a href="#">About</a>
+				</div>
+				<div>
+					<span class="pie-texto">
+						Designed and built with all the love in the world by 
+						<a href="#">@mdo</a> and <a href="">@fat</a>. Maintained by the 
+						<a href="#">core team </a>
+						with the help of 
+						<a href="#">our contributors.</a>
+					</span>
+				</div>
+				<div>
+					<span class="pie-texto">
+						Currently v4.0.0-beta. Code licensed <a href="#">MIT</a>, docs 
+						<a href="#">CC BY 3.0</a>.
+					</span>
+				</div>
+
+			</div>
+		</div>
+		
+		
+		<!--<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>-->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	</body>
+</html>
